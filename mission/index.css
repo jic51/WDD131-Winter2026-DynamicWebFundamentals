@@ -1,0 +1,81 @@
+/* Body */
+body {
+    background-color: #f4f4f4; 
+    font-family: "Times New Roman", Times, serif;
+    display: flex;
+    justify-content: center;
+    padding: 80px 20px;
+    line-height: 1.8;
+    color: #333;
+}
+
+
+#content {
+    background-color: white;
+    max-width: 800px;
+    padding: 100px 100px;
+    border: 1px solid #ddd;
+    text-align: center; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Main title */
+h1 {
+    font-size: 2.2rem;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
+/* subtitle */
+h1 + p {
+    color: #006eb6; /* Color azul característico de BYUI */
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+/* horizontal line*/
+hr {
+    border: 0;
+    border-top: 1px solid #006eb6;
+    width: 60%;
+    margin: 20px auto 40px auto;
+    opacity: 0.3;
+}
+
+/* mission paragraph*/
+#content > p:nth-of-type(2) {
+    text-align: left;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+/* "The university does this by" */
+h2 {
+    text-align: left;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+/* List */
+.list {
+    text-align: left;
+    padding-left: 40px;
+}
+
+.list li {
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+/* Logo */
+img {
+    margin-top: 40px;
+    max-width: 150px;
+    height: auto;
+}
