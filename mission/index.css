@@ -79,3 +79,23 @@ img {
     max-width: 150px;
     height: auto;
 }
+
+/* dark mode*/
+body.dark {
+    background-color: #333;
+    color: white;
+}
+
+body.dark #content {
+    background-color: #444;
+    border-color: #555;
+    color: white;
+}
+
+body.dark h1 + p {
+    color: #8dbadb;
+}
+
+body.dark hr {
+    border-top: 1px solid #8dbadb;
+}
