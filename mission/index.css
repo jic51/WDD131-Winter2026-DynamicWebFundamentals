@@ -12,7 +12,7 @@ body {
 
 #content {
     background-color: white;
-    max-width: 800px;
+    max-width: 750px;
     padding: 100px 100px;
     border: 1px solid #ddd;
     text-align: center; 
@@ -82,13 +82,13 @@ img {
 
 /* dark mode*/
 body.dark {
-    background-color: #333;
+    background-color: #1b1b1b;
     color: white;
 }
 
 body.dark #content {
-    background-color: #444;
-    border-color: #555;
+    background-color: #1b1b1b;
+    border-color: #2f2f2f;
     color: white;
 }
 
@@ -99,3 +99,5 @@ body.dark h1 + p {
 body.dark hr {
     border-top: 1px solid #8dbadb;
 }
+
+
