@@ -18,3 +18,5 @@ function changeTheme() {
         logo.setAttribute('src', 'https://wddbyui.github.io/wdd131/images/byui-logo-blue.webp');
     }
 }
+
+themeSelector.addEventListener('change', changeTheme);
