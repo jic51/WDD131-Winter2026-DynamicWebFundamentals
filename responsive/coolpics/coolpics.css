@@ -1,0 +1,93 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+  background-color: rgb(196, 196, 196);
+}
+
+header,
+footer {
+  background-color: rgb(72, 119, 227);
+}
+
+header {
+  padding: 1rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+  max-width: 1200px;          
+}
+
+img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 2px 2px 5px black;;
+  background-color: rgb(255, 255, 255);
+}
+
+h1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+h2 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+}
+
+section {
+  padding: 20px;
+  background-color: rgba(158, 158, 158, 0);
+  margin: 1em;
+  
+}
+
+nav a {
+    padding: 20px;
+    color: rgb(254, 254, 254);
+    display: none;
+}
+nav a:hover {
+    text-decoration: none;
+    color: #616061;
+}
+.menu-btn {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+footer {
+    text-align: center;
+}
+
+@media screen and (min-width: 700px) {
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+  .menu-btn {
+    display: none;
+  }
+  nav a {
+    display: inline;
+  }
+  nav {
+    text-align: center;
+  }
+}
+ 
+@media screen and (min-width: 1000px) {
+  .gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
