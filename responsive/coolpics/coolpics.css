@@ -21,7 +21,7 @@ header {
 .gallery {
   display: grid;
   grid-template-columns: 1fr;
-  margin: 0 auto;
+  margin: 20px 50px auto;
   max-width: 1200px;          
 }
 
