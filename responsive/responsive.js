@@ -4,6 +4,6 @@ const nav = document.querySelector("nav");
 btn.addEventListener("click", toggleMenu);
 
 function toggleMenu() {
-  menu.classList.toggle("hide");
+  nav.classList.toggle("hide");
   btn.classList.toggle("change");
 }
