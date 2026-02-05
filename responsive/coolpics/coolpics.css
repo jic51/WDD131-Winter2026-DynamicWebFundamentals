@@ -84,22 +84,24 @@ nav a.hide {
 }
 
 dialog {
-  border: 0.1px solid #ccc;
+  border: none;
   border-radius: 8px;
   padding: 40px;
   max-width: 800px;
   margin: auto;
+  background-color: rgba(42, 42, 42, 0.134);
 }
 
 dialog::backdrop {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.809);
 }
 
 .close-viewer {
   position: absolute;
+  background-color: gray;
+  font-size: 20px;
   top: 5px;
   right: 5px;
-  cursor: pointer;
 }
 
 @media screen and (min-width: 700px) {
