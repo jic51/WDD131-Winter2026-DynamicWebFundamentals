@@ -1,0 +1,144 @@
+:root {
+  --color-accent: #c166a0;    
+  --color-border: #e0d4d8;
+  --color-text: #333;
+  --color-bg: #fffef9;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  line-height: 1.5;
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: var(--color-accent);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.8rem;
+}
+
+nav a {
+  color: var(--color-accent);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 1.5rem 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.post {
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  background: white;
+}
+
+.post header {
+  border: none;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.post .date {
+  color: #777;
+  font-size: 0.95rem;
+}
+
+.post .title {
+  margin: 0.4rem 0;
+  color: var(--color-accent);
+  font-size: 1.7rem;
+}
+
+.post .meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  margin: 0.8rem 0 1.2rem;
+  font-size: 0.95rem;
+}
+
+.post .stars {
+  color: #f4c430;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.book-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+}
+
+.description {
+  font-size: 1.05rem;
+}
+
+.author {
+  margin-top: 1.5rem;
+  font-style: italic;
+  text-align: right;
+  color: #555;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  color: #777;
+  font-size: 0.9rem;
+  border-top: 1px solid var(--color-border);
+}
+
+/* ── Desktop ────────────────────────────*/
+@media (min-width: 650px) {
+  main {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .content {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .book-image {
+    width: 260px;
+    flex-shrink: 0;
+  }
+
+  .text-side {
+    flex: 1;
+  }
+
+  .post .title {
+    font-size: 2.1rem;
+  }
+}
