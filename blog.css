@@ -6,6 +6,7 @@
 }
 
 body {
+  min-width: 300px;
   font-family: Arial, Helvetica, sans-serif;
   color: var(--color-text);
   background-color: var(--color-bg);
@@ -30,7 +31,7 @@ nav ul {
   padding: 0;
   margin: 1rem 0 0;
   display: flex;
-  justify-content: center;
+  justify-content: right;
   gap: 1.8rem;
 }
 
@@ -66,6 +67,7 @@ main {
 .post .date {
   color: #777;
   font-size: 0.95rem;
+  text-align: right;
 }
 
 .post .title {
@@ -75,8 +77,9 @@ main {
 }
 
 .post .meta {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-rows: auto auto;
+  text-align: right;
   gap: 1.2rem;
   margin: 0.8rem 0 1.2rem;
   font-size: 0.95rem;
@@ -97,17 +100,19 @@ main {
   height: auto;
   border-radius: 6px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.12);
-}
-
-.description {
-  font-size: 1.05rem;
+  text-align: center;
 }
 
 .author {
   margin-top: 1.5rem;
   font-style: italic;
-  text-align: right;
+  text-align: center;
   color: #555;
+}
+
+.image-side {
+  display: flex;
+  justify-content: center;
 }
 
 footer {
@@ -124,13 +129,19 @@ footer {
     padding: 2.5rem 1.5rem;
   }
 
+  .post {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr auto;
+
+  }
+
   .content {
-    flex-direction: row;
     align-items: flex-start;
   }
 
   .book-image {
-    width: 260px;
+    grid-row: 1/3;
     flex-shrink: 0;
   }
 
@@ -140,5 +151,6 @@ footer {
 
   .post .title {
     font-size: 2.1rem;
+    grid-column: 1/3  ;
   }
 }
