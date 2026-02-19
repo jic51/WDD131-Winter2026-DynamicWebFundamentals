@@ -24,7 +24,7 @@ body {
     grid-row: 2 / 4;
     background-color: var(--back-color);
     border-radius: 10px;
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
     display: grid;
     grid-template-rows: 40px 1fr;
     padding: 20px 0;

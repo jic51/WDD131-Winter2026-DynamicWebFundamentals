@@ -14,7 +14,7 @@ document.getElementById('credit-card-form').addEventListener('submit', function(
     feedback.classList.remove('hide', 'error', 'success');
 
     // 1. Validar número exacto
-    if (cardNumber !== '1234567891011020') {
+    if (cardNumber !== '1234123412341234') {
         showFeedback("Invalid Card Number", "error");
         return;
     }
