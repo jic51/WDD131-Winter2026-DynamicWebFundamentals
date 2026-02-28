@@ -4,8 +4,8 @@ const character = {
     class: "Wizard",
     level: 1,
     health: 100,
-    image: "https://byui-cit.github.io/learning-modules/modules/wdd131/javascript-object/images/character.png",
-
+    image: "snortleblat.webp",
+    
     // Método para recibir daño
     attacked: function() {
         if (this.health > 0) {
