@@ -1,11 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Card - WDD 131</title>
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="My RPG Character Card">
+    <meta property="og:description" content="Check out my custom character stats and level!">
+    <meta property="og:url" content="https://tuusuario.github.io/wdd131/charactercard">
+    <meta property="og:image" content="https://byui-cit.github.io/learning-modules/modules/wdd131/javascript-object/images/character.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="My RPG Character Card">
+    <meta name="twitter:description" content="Interative character card project.">
+    
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="charactercard.css">
+    <script src="charactercard.js" defer></script>
 </head>
 <body>
-  
+    <div class="card">
+        <img id="charImage" class="image" src="character_img.png" alt="Character Image">
+        <div class="name" id="charName">Name</div>
+        <div class="stats">
+            <p>Class: <span id="charClass"></span></p>
+            <p>Level: <span id="charLevel"></span></p>
+            <p>Health: <span id="charHealth"></span></p>
+        </div>
+        <div class="buttons">
+            <button id="btnAttack">Attacked!</button>
+            <button id="btnLevel">Level Up</button>
+        </div>
+    </div>
 </body>
 </html>
