@@ -95,7 +95,9 @@ footer {
     gap: 20px;
 }
 
-.social img { width: 30px; }
+.social img { 
+    width: 30px;
+}
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 600px) {
@@ -122,6 +124,12 @@ footer {
     .recipe-content {
         flex: 1;
     }
+
+    footer {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
 }
 
 @media screen and (max-width: 599px) {
