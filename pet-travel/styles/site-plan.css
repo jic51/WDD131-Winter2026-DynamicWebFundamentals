@@ -1,0 +1,39 @@
+body {
+    font-family: 'Lato', sans-serif;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    background-color: #2D5A27;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+h1, h2, h3 {
+    font-family: 'Varela Round', sans-serif;
+}
+
+table.colors {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+table.colors td {
+    padding: 40px;
+    font-weight: bold;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+}
