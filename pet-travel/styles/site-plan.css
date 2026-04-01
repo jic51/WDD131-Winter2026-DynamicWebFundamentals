@@ -37,3 +37,51 @@ img {
     margin: 20px 0;
     border: 1px solid #ccc;
 }
+
+/* Responsive Grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Mobile First */
+    gap: 20px;
+    padding: 20px;
+}
+
+@media (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+/* Visual Appeal */
+.location-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease;
+}
+
+.location-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.location-card img {
+    width: 100%;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+/* Accessibility: High contrast colors */
+body {
+    color: #222;
+    background-color: #fff;
+    line-height: 1.6;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #2D5A27;
+    font-weight: bold;
+    text-decoration: none;
+}
