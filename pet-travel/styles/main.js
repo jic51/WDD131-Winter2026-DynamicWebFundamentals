@@ -1,9 +1,10 @@
-import { locations } from '../locations.js';
+import { locations } from '../locations.js'; // El ../ es clave para salir de la carpeta styles
 
-// 1. Función para renderizar tarjetas (DOM Interaction)
 function renderLocations(items) {
     const container = document.querySelector("#locations-grid");
-    container.innerHTML = ""; // Limpiar antes de renderizar
+    if (!container) return; // Seguridad
+    
+    container.innerHTML = ""; 
 
     items.forEach(place => {
         const card = document.createElement("section");
@@ -19,14 +20,12 @@ function renderLocations(items) {
     });
 }
 
-// 2. Función de Filtrado (Conditional Branching & Filter Method)
 function setupFilters() {
     const buttons = document.querySelectorAll(".filter-btn");
     
     buttons.forEach(btn => {
         btn.addEventListener("click", () => {
             const type = btn.dataset.type;
-            
             if (type === "all") {
                 renderLocations(locations);
             } else {
@@ -37,9 +36,9 @@ function setupFilters() {
     });
 }
 
-// Inicialización
 document.addEventListener("DOMContentLoaded", () => {
     renderLocations(locations);
     setupFilters();
-    document.getElementById("currentyear").textContent = new Date().getFullYear();
+    const yearSpan = document.getElementById("currentyear");
+    if (yearSpan) yearSpan.textContent = new Date().getFullYear();
 });

@@ -1,4 +1,4 @@
-const locations = [
+export const locations = [
     {
         name: "Green Bark Park",
         type: "park",
@@ -6,7 +6,7 @@ const locations = [
         rating: 5,
         amenities: ["off-leash", "water stations", "fenced"],
         description: "A lush, green sanctuary for energetic dogs with dedicated small-dog areas.",
-        image: "images/park-green-bark.jpg"
+        image: "images/dog-house.png" 
     },
     {
         name: "Paws & Pillows Hotel",
@@ -14,8 +14,8 @@ const locations = [
         city: "Seattle",
         rating: 4,
         amenities: ["pet bedding", "room service", "dog walking"],
-        description: "Luxury stay where your pet gets their own plush bed and a welcome treat.",
-        image: "images/hotel-paws-pillows.jpg"
+        description: "Luxury stay where your pet gets their own plush bed.",
+        image: "images/dog-house.png"
     },
     {
         name: "The Golden Bone Cafe",
@@ -23,27 +23,7 @@ const locations = [
         city: "San Francisco",
         rating: 5,
         amenities: ["pet menu", "outdoor seating"],
-        description: "Famous for its 'Puppuccino' and organic liver treats. Perfect for a brunch date.",
-        image: "images/cafe-golden-bone.jpg"
-    },
-    {
-        name: "Sunset Ridge Trail",
-        type: "park",
-        city: "Denver",
-        rating: 4,
-        amenities: ["hiking", "waste stations"],
-        description: "Moderate hiking trail with breathtaking views and pet-friendly resting spots.",
-        image: "images/park-sunset-ridge.jpg"
-    },
-    {
-        name: "Coastal Breeze Resort",
-        type: "hotel",
-        city: "San Diego",
-        rating: 3,
-        amenities: ["beach access", "pet wash station"],
-        description: "Standard resort right on the beach. Great for dogs who love the sand.",
-        image: "images/hotel-coastal-breeze.jpg"
+        description: "Famous for its 'Puppuccino' and organic liver treats.",
+        image: "images/dog-house.png"
     }
 ];
-
-export default locations;
